@@ -1,0 +1,14 @@
+#!/bin/bash
+
+while true; do
+	CPU=$(dwm-cpu)
+	BAT=$(dwm-battery)
+	MEM=$(dwm-memory)
+	INT=$(dwm-internet)
+	DISK=$(dwm-disk)
+	TIME=$(dwm-time)
+	xsetroot -name "| $CPU | $DISK | $MEM | $INT | $BAT | $TIME    |"
+
+	sleep 5s
+
+done &
